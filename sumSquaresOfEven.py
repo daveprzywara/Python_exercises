@@ -1,5 +1,7 @@
+'''
 Python function which, when called with a list of integers, 
 returns the sum of the squares of all even members of that list.
+'''
 
 
 def sumList(lst):
