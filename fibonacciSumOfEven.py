@@ -9,10 +9,13 @@ def fibonacciSum():
   evenCounter = 0
   
   def fib(num):
-    if (num < 2):
-      return (num)
-    if (num >= 2):
-      return (fib(num - 1) + fib(num - 2))
+    if (num == 0):
+      return num
+    if num > 0:
+      a, b = 1, 1
+      for i in range(1, num):
+        a, b = b, a + b
+      return a
       
   while count != -1:
     if (fib(count) % 2 == 0):
